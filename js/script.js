@@ -41,6 +41,8 @@ async function getStats(apikey, gt){
     return final;
 }
 
+
+
 async function displayData(apiKey, gt, divId){
 
     let data = await getStats(apiKey, gt);
@@ -65,9 +67,8 @@ async function displayData(apiKey, gt, divId){
     const timePlayed = `<strong>Playtime: </strong> ${secondsToDhms(data.lifetime.all.properties.timePlayedTotal)}`;
     newPara(timePlayed);
 
-    // displays Time Moving
-    const timePlayed = `<strong>Playtime: </strong> ${secondsToDhms(data.lifetime.all.properties.timePlayedTotal)}`;
-    newPara(timePlayed);
+
+
 
 }
 
