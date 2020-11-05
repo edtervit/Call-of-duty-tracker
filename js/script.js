@@ -68,6 +68,10 @@ async function displayData(apiKey, gt, divId){
     newPara(timePlayed);
 
 
+    // displays suicides
+    const suicides = `<strong>Suicides: </strong> ${data.lifetime.all.properties.suicides}`;
+    newPara(suicides);
+
 
 
 }
